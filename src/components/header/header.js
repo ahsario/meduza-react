@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 
 function Header (){
@@ -9,22 +9,22 @@ function Header (){
 
             <div className="header-info">
                 <div className="home">
-                    <a href="/"><div className="home"></div> </a>
+                    <Link to='/news'><div className="home"></div> </Link>
                 </div>
 
                 <div>
                     <ul className="itemes">
-                        <li><Link to='/news'>НОВОСТИ</Link></li>
-                        <li><Link to='/history'>ИСТОРИИ</Link></li>
-                        <li><Link to='/parsing'>РАЗБОР</Link></li>
-                        <li><Link to='/plays'>ИГРЫ</Link></li>
-                        <li><Link to='/shapito'>ШАПИТО</Link></li>
-                        <li><Link to='/podcasts'>ПОДКАСТЫ</Link></li>
-                        <li><Link to='/coronavirus'>КОРОНАВИРУС</Link></li>
+                        <li><NavLink activeStyle={{color: 'orangered'}} to='/news'>НОВОСТИ</NavLink></li>
+                        <li><NavLink activeStyle={{color: 'orangered'}} to='/history'>ИСТОРИИ</NavLink></li>
+                        <li><NavLink activeStyle={{color: 'orangered'}} to='/parsing'>РАЗБОР</NavLink></li>
+                        <li><NavLink activeStyle={{color: 'orangered'}} to='/plays'>ИГРЫ</NavLink></li>
+                        <li><NavLink activeStyle={{color: 'orangered'}} to='/shapito'>ШАПИТО</NavLink></li>
+                        <li><NavLink activeStyle={{color: 'orangered'}} to='/podcasts'>ПОДКАСТЫ</NavLink></li>
+                        <li><NavLink activeStyle={{color: 'orangered'}} to='/coronavirus'>КОРОНАВИРУС</NavLink></li>
                     </ul>
                 </div>
 
-                <div className="search">EN|&#128270</div>
+                <div className="search">EN|<div className='lupa'></div></div>
 
                 <div className="daily-info">
                     <div className="dollor">74,39</div>

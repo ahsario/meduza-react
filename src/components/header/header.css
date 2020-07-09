@@ -17,8 +17,11 @@
 }
 
 .korona{
-    width: 7px;
-    height: 70px;
+    position: relative;
+    left:50px;
+    top: -15px;
+    width: 25px;
+    height: 25px;
     background: url(../../images/korona.png) no-repeat ;
     background-size: contain;
    
@@ -33,34 +36,42 @@
 
 
 
-.itemes li{
+.itemes {
     color: white;
     list-style: none;
     float: left;
     padding-right: 30px;
 }
 
-.itemes a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.8em;
-}
-
-
-a:hover{
+.itemes li:hover{
     color:grey;
 }
 
-a:active{
-    color:orangered;
+.itemes li {
+    list-style: none;
+    float: left;
+    padding-right: 30px;
 }
+
+
 .active {
     color: orangered;
 }
 
 .search{
+    
     float: right;
     color:white;
+}
+
+.lupa {
+    float: right;
+    width: 25px;
+    height: 25px;
+    background: url(../../images/лупа.png) no-repeat ;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
 }
 
 .daily-info{

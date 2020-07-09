@@ -18,25 +18,26 @@ export default Item;
 
 
 const InfoDiv = styled.div`
-    color: black;
+    color: white;
     font-size: large;
     height: 370px;
-    padding: 20px;
+    vertical-align: bottom;    
     background-color: rgb(214, 233, 236);
     border-radius: 10px;
 `;
 
 const Post = styled.div`
-  width:620px;
+  width:650px;
   height: 330px;
-  margin-right: 10px;
+  margin: 18px 15px 18px 15px;
   background-image: url(${props => `${process.env.PUBLIC_URL}${props.img}`});
   border-radius: 10px;
   background-size: cover;
   float: left;
-
+ 
   h2 {
-      color: black;
-      font-size: 36px;
+      color: white;
+      font-size: 28px;
+      
   };
 `;
