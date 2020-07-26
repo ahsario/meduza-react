@@ -1,11 +1,16 @@
 import React from 'react';
 import Item from '../item/item';
+import Data from '../data';
 
 const ParsingPage = () => {
     return (
-        <Item imgUrl={['./img/parsing1.jpg','./img/parsing2.jpg']}
-              headerText={['Интересный заголовок','Интересный заголовок']}
-              bodyText={['Бла бла бла.....всякая хуета здесь...','Бла бла бла.....всякая хуета здесь...']}>
+        <Item imgUrl={['./img/parsing1.jpg','./img/parsing2.png']}
+        headerText={
+            [Data.parsing[0].title,
+            Data.parsing[1].title]}
+        bodyText={
+            [Data.parsing[0].body,
+            Data.parsing[1].body]}>
         </Item>
     )
 }

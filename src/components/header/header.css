@@ -1,80 +1,101 @@
-.header{
+.header-block{
+    background-position: top center ;
     height: 200px;
-    background: url(../../images/header.jpg) no-repeat ;
+    background: url(../../images/header.jpg) no-repeat center top ;
     background-size: contain;
     background-origin: content-box;
-    background-position: top center ;
 }
-.header-info{
-    padding-top: 50px;
-}
-
-.home{
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     
-    background: url(../../images/home.png) no-repeat ;
-    background-size: contain;
-    margin-right: 100px ;
 }
 
-.korona{
-    width: 7px;
-    height: 70px;
-    background: url(../../images/korona.png) no-repeat ;
-    background-size: contain;
-   
-}
-
-.home a div{
-    float: left;
-    width: 100px;
-    height: 25px;
-    padding-right: 200px;
-}
-
-
-
-.itemes li{
+.itemes {
+    display: flex;
+    padding-top: 40px;
+    padding-right: 30px;
     color: white;
     list-style: none;
-    float: left;
-    padding-right: 30px;
 }
 
-.itemes a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.8em;
-}
-
-
-a:hover{
+.itemes li:hover{
     color:grey;
 }
 
-a:active{
-    color:orangered;
+.itemes li {
+    padding-right: 30px;
+    list-style: none;
 }
+
+
 .active {
     color: orangered;
 }
 
 .search{
-    float: right;
+    display: flex;
+    padding-top: 40px;
     color:white;
 }
 
+.lupa {
+    /* display: flex; */
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    background: url(../../images/лупа.png) no-repeat ;
+    background-size: contain;
+    
+}
+
 .daily-info{
+    display: flex;
+    margin-top: 30px;
+    padding: 0 10px 0 10px;
     width: 100%;
     height: 40px;
     background-color:white;
     border-radius: 5px;
-    float: left;
-    margin-top: 30px;
-    padding: 0 10px 0 10px;
+    
+}
+.home{
+    /* display: flex; */
+    width: 100px;
+    height: 25px;
+    margin-top: 40px;
+    padding-right: 200px;
+    background: url(../../images/home.png) no-repeat ;
+    background-size: contain;
+}
+
+.corona-icon{
+    position: relative;
+    left:0px;
+    top: -15px;
+    width: 25px;
+    height: 25px;
+    background: url(../../images/korona.png) no-repeat ;
+    background-size: contain;
+   
+}
+
+.corona {
+    display: flex;
+    width: auto;
+    margin-left: 80px;
+    text-decoration: none;
+    color:black;
+}
+
+.corona:hover{
+    color:rgb(248, 123, 78);
 }
 
 .daily-info div{
-    float: left;
+    /* display: flex; */
     margin-right: 10px;
     margin-top: 10px;
     vertical-align: middle;
@@ -96,30 +117,21 @@ a:active{
 }
 
 
-.corona a{
-    display: block;
-    width: auto;
-    margin-left: 80px;
-    text-decoration: none;
-    color:black;
-}
 
-.corona a:hover{
-    color:rgb(248, 123, 78);
-}
 
 .changer{
-    float: right !important;
+    /* display: flex; */
     margin-left: 120px;
     color:grey;
 }
 
 .info {
-    font-size: 1.5em;
-    color:white;
-    vertical-align: bottom;
+    
     height: 370px;
     padding: 20px;
+    font-size: 1.5em;
+    vertical-align: bottom;
+    color:white;
     background-color: rgb(214, 233, 236);
     border-radius: 10px;
 }

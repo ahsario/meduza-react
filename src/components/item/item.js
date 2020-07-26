@@ -8,8 +8,8 @@ const Item = ({ imgUrl: [firstImg, secondImg], headerText, bodyText }) => (
       <p>{bodyText[0]}</p>
     </Post>
     <Post img={secondImg}>
-      <h2>{headerText[0]}</h2>
-      <p>{bodyText[0]}</p>
+      <h2>{headerText[1]}</h2>
+      <p>{bodyText[1]}</p>
     </Post>
   </InfoDiv>
 )
@@ -18,25 +18,27 @@ export default Item;
 
 
 const InfoDiv = styled.div`
-    color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
     font-size: large;
     height: 370px;
-    padding: 20px;
+    vertical-align: bottom;    
     background-color: rgb(214, 233, 236);
     border-radius: 10px;
 `;
 
 const Post = styled.div`
-  width:620px;
+  width:650px;
   height: 330px;
-  margin-right: 10px;
+  margin: 18px 15px 18px 15px;
   background-image: url(${props => `${process.env.PUBLIC_URL}${props.img}`});
   border-radius: 10px;
   background-size: cover;
-  float: left;
-
+   
   h2 {
-      color: black;
-      font-size: 36px;
+      color: white;
+      font-size: 28px;
+      
   };
 `;
